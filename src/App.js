@@ -1,12 +1,21 @@
 import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
+import Myprofile from './components/Myprofile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Application here...</h1>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Rockets />} />
+        <Route path="missions" element={<Missions />} />
+        <Route path="myprofile" element={<Myprofile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
