@@ -27,6 +27,7 @@ a {
 .divnav {
   display: flex;
   margin: 10px 20px 10px 20px;
+  justify-content: space-between;
 }
 
 .sitename {
@@ -47,11 +48,6 @@ a:focus {
   text-decoration: underline;
 }
 
-.divnav{
-  display: flex;
-  justify-content: space-between;
-
-}
-.divider1{
+.divider1 {
   width: 50%;
 }
