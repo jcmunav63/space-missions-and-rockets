@@ -250,10 +250,33 @@ tr:nth-child(even) {
   margin: 20px;
 }
 
-.button2r {
+.button3 {
   background-color: dodgerblue;
   color: white;
   border: none;
   padding: 10px;
   border-radius: 5%;
+}
+
+.button3b {
+  background-color: white;
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.status {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  font-size: 12px;
+  padding: 1px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.status1 {
+  display: none;
 }
