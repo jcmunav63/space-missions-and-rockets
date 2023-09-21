@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Rocketslist = ({
-  rockets, loading, error,
+  rockets, loading, error, handleReserveRocket, handleCancelRocket,
 }) => {
   if (loading) {
     return (
@@ -29,16 +29,40 @@ const Rocketslist = ({
             </div>
             <div className="rocketstatus">
               <span>{rocket.name}</span>
-              <span>{rocket.description}</span>
               <span>
-                <button className="button2r" type="button">
-                  Reserve Rocket
-                </button>
+                {rocket.reserved ? (
+                  <span className="status">
+                    Reserved
+                  </span>
+                )
+                  : (
+                    <span className="status1">
+                      Reserved
+                    </span>
+                  )}
+                {rocket.description}
+              </span>
+              <span>
+                {rocket.reserved ? (
+                  <button
+                    className="button3b"
+                    type="button"
+                    onClick={() => handleCancelRocket(rocket.id)}
+                  >
+                    Cancel Rocket
+                  </button>
+                ) : (
+                  <button
+                    className="button3"
+                    type="button"
+                    onClick={() => handleReserveRocket(rocket.id)}
+                  >
+                    Reserve Rocket
+                  </button>
+                )}
               </span>
             </div>
-
           </li>
-
         ))}
       </ul>
       <div className="footer" />
@@ -54,10 +78,13 @@ Rocketslist.propTypes = {
       description: PropTypes.string.isRequired,
       flickr_images: PropTypes.string.isRequired,
       active: PropTypes.bool.isRequired,
+      reserved: PropTypes.bool.isRequired,
     }),
   ).isRequired,
   loading: PropTypes.bool.isRequired,
   error: PropTypes.bool,
+  handleReserveRocket: PropTypes.func.isRequired,
+  handleCancelRocket: PropTypes.func.isRequired,
 };
 
 Rocketslist.defaultProps = {
