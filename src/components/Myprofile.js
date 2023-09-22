@@ -3,6 +3,7 @@ import earth from '../assets/earth-italy.jpg';
 import Profiledetails from './Profiledetails';
 import Profiledetailsb from './Profiledetailsb';
 
+
 const Myprofile = () => (
   <div className="profile" style={{ backgroundImage: `url(${earth})` }}>
     <Profiledetails />
