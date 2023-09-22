@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { useDispatch, useSelector } from 'react-redux';
-import Missions from './missions';
+import Missions from './Missions';
 import { getMissions, joinMission, leaveMission } from '../redux/missions/missionsSlice';
 import '@testing-library/jest-dom/extend-expect';
 
