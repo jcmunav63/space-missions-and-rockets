@@ -58,7 +58,8 @@ describe('Rockets component', () => {
 
   it('renders error state', () => {
     const errorMessage = 'Error fetching rockets!';
-    useSelector.mockImplementationOnce(() => ({ rockets: [], loading: false, error: errorMessage }));
+    useSelector.mockImplementationOnce(() => (
+      { rockets: [], loading: false, error: errorMessage }));
 
     render(<Rockets />);
     expect(screen.getByText(`Error: ${errorMessage}`)).toBeInTheDocument();

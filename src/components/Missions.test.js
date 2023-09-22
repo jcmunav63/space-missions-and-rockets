@@ -56,7 +56,8 @@ describe('Missions component', () => {
 
   it('renders error state', () => {
     const errorMessage = 'Error fetching missions!';
-    useSelector.mockImplementationOnce(() => ({ missions: [], loading: false, error: errorMessage }));
+    useSelector.mockImplementationOnce(() => (
+      { missions: [], loading: false, error: errorMessage }));
 
     render(<Missions />);
     expect(screen.getByText(`Error: ${errorMessage}`)).toBeInTheDocument(`Error: ${errorMessage}`);
