@@ -28,8 +28,8 @@ const Rocketslist = ({
               <img src={rocket.flickr_images[0]} alt="rocket" height="125px" width="250px" />
             </div>
             <div className="rocketstatus">
-              <span>{rocket.name}</span>
-              <span>
+              <span className="rocket">{rocket.name}</span>
+              <span className="descrocket">
                 {rocket.reserved ? (
                   <span className="status">
                     Reserved
@@ -49,7 +49,7 @@ const Rocketslist = ({
                     type="button"
                     onClick={() => handleCancelRocket(rocket.id)}
                   >
-                    Cancel Rocket
+                    Cancel Reservation
                   </button>
                 ) : (
                   <button

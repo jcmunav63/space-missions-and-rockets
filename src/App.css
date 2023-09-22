@@ -86,7 +86,7 @@ a:focus {
 }
 
 .profile {
-  height: 90vh;
+  height: 100vh;
   color: #000;
 }
 
@@ -250,6 +250,15 @@ tr:nth-child(even) {
   margin: 20px;
 }
 
+.rocket {
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.descrocket {
+  margin-bottom: 10px;
+}
+
 .button3 {
   background-color: dodgerblue;
   color: white;
@@ -279,4 +288,35 @@ tr:nth-child(even) {
 
 .status1 {
   display: none;
+}
+
+/* MY PROFILE STYLES */
+.myprofiledivs {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divmissions {
+  margin-top: 100px;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.divrockets {
+  margin-top: 100px;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.boldtext {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.normaltext {
+  margin-left: 10px;
 }
