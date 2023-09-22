@@ -13,31 +13,27 @@ const Profiledetails = () => {
     .includes(mission.mission_id));
 
   return (
-    <div className="myprofiledivs">
-      <div className="divmissions">
-        {filteredMissions.length === 0 ? (
-          <div>
-            <p className="boldtext">My Missions</p>
-            <p className="normaltext">No missions joined!</p>
-          </div>
-        ) : (
-          <div>
-            <p className="boldtext">My Missions</p>
-            <ul>
-              {filteredMissions.map((mission) => (
-                <li key={mission.mission_id}>{mission.mission_name}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-      {/* <div className="divrockets">
-        <div>
-          <p className="boldtext">My Rockets</p>
-          <p className="normaltext">No rockets reserved!</p>
+    <>
+      <div className="myprofiledivs">
+        <div className="divmissions">
+          {filteredMissions.length === 0 ? (
+            <div>
+              <p className="boldtext">My Missions</p>
+              <p className="normaltext">No missions joined!</p>
+            </div>
+          ) : (
+            <div>
+              <p className="boldtext">My Missions</p>
+              <ul className="listmissions">
+                {filteredMissions.map((mission) => (
+                  <li className="limission" key={mission.mission_id}>{mission.mission_name}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
-      </div> */}
-    </div>
+      </div>
+    </>
   );
 };
 
