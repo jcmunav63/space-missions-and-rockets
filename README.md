@@ -37,6 +37,7 @@
 - JAVASCRIPT
 - WEBPACK
 - REACT - REDUX
+- JEST
 
 <!-- Key Features -->
 ### Key Features <a name="key-features"></a>
@@ -47,7 +48,7 @@
 - **React project with components**
 - **Uses Redux**
 - **Fetch data from SpaceX API**
-- **Unit-test react components**
+- **Unit-testing react components**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
