@@ -42,12 +42,15 @@ a:focus {
 .divnavbar {
   width: 100%;
   background-color: #fff;
-  height: 50px;
+  height: 60px;
 }
 
 .divnav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  margin: 10px 55px 10px 40px;
 }
 
 .navbar {
@@ -56,10 +59,10 @@ a:focus {
 }
 
 .sitename {
-  margin-left: 10px;
   font-size: 24px;
   font-weight: 600;
   margin-top: 10px;
+  display: inline-block;
 }
 
 .planetlogo {
@@ -91,6 +94,10 @@ hr {
   margin-top: 10px;
   margin-bottom: 20px;
   width: 90%;
+}
+
+.missionsdiv hr {
+  width: 100%;
 }
 
 .separator {
@@ -359,4 +366,9 @@ tr:nth-child(even) {
 
 .normaltext {
   margin-left: 10px;
+}
+
+.table {
+  width: 95%;
+  margin-left: 20px;
 }
