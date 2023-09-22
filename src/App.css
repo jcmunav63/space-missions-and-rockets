@@ -85,11 +85,6 @@ a:focus {
   background-color: #282c34;
 }
 
-.profile {
-  height: 90vh;
-  color: #000;
-}
-
 /* MISSIONS STYLES */
 hr {
   border: solid 1px #dfdfdf;
@@ -250,6 +245,15 @@ tr:nth-child(even) {
   margin: 20px;
 }
 
+.rocket {
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.descrocket {
+  margin-bottom: 10px;
+}
+
 .button3 {
   background-color: dodgerblue;
   color: white;
@@ -279,4 +283,80 @@ tr:nth-child(even) {
 
 .status1 {
   display: none;
+}
+
+/* MY PROFILE STYLES */
+.profile {
+  height: 100vh;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.myprofiledivs {
+  width: 43%;
+  margin-left: 4.5%;
+}
+
+.myprofiledivs2 {
+  width: 43%;
+  margin-right: 4.5%;
+}
+
+.divmissions {
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.divrockets {
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.listmissions {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.limission {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.listrockets {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.lirocket {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.boldtext {
+  font-weight: bold;
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.normaltext {
+  margin-left: 10px;
 }

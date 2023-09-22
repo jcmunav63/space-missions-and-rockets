@@ -1,12 +1,12 @@
 import React from 'react';
 import earth from '../assets/earth-italy.jpg';
-// import Myprofilelist from './Myprofilelist';
+import Profiledetails from './Profiledetails';
+import Profiledetailsb from './Profiledetailsb';
 
 const Myprofile = () => (
   <div className="profile" style={{ backgroundImage: `url(${earth})` }}>
-    <h1>My Profile List here...</h1>
-    {/* <Rocketslist rockets={rockets} /> */}
-    {/* <Missionslist missions={missions} /> */}
+    <Profiledetails />
+    <Profiledetailsb />
   </div>
 );
 
