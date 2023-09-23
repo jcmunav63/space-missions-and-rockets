@@ -1,4 +1,4 @@
-# Space Travelers' Hub App
+# Space Travelers' Hub App 0.1.0
 
 <a name="readme-top"></a>
 
@@ -26,7 +26,7 @@
 <!-- PROJECT DESCRIPTION -->
 # 📖 [About the Project - Space Travelers' Hub App] <a name="about-project"></a>
 
-**Space Travelers' Hub** It's a small website app for displaying information about SpaceX rockets, missions and the user's profile (including rockets' booking and missions' joined). It uses React & Redux.
+**Space Travelers' Hub 0.1.0** It's a small website app for displaying information about SpaceX rockets, missions and the user's profile (including rockets' booking and missions' joined). It uses React & Redux.
 
 ## 🛠️ Built With <a name="built-with"></a>
 
