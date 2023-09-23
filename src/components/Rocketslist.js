@@ -25,7 +25,7 @@ const Rocketslist = ({
         {rockets.map((rocket) => (
           <li key={rockets.id} className="rocketname">
             <div className="rocketimg">
-              <img src={rocket.flickr_images[0]} alt="rocket" height="125px" width="250px" />
+              <img src={rocket.flickr_images[0]} alt="rocket" height="176px" width="220px" />
             </div>
             <div className="rocketstatus">
               <span className="rocket">{rocket.name}</span>
